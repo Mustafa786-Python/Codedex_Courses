@@ -1,17 +1,4 @@
-import csv
+numbers = [57, 10, 82, 36, 89, 46, 13, 23, 92, 48]
 
-# Data to be written to the CSV file
-data_to_write = [
-    ['Name', 'Age', 'Grade'],
-    ['Alice', 25, 'A'],
-    ['Bob', 22, 'B'],
-    ['Charlie', 28, 'A+']
-]
-
-# Open the CSV file in 'write' mode
-with open('output.csv', 'w', newline="") as file:
-    # Create a CSV writer object
-    csv_writer = csv.writer(file)
-
-    # Write the data to the CSV file
-    csv_writer.writerows(data_to_write)
+even_numbers = [num for num in numbers if num % 2 == 0]
+print(even_numbers)
